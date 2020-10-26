@@ -13,13 +13,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Running frontend app
 
-Run `ng serve` or `npm run start` at the root of the frontend project.
+- Run `npm i` for dependances
 
-Webapp can be reach at `http://localhost:4200/`.
+- Run `ng serve` or `npm run start` at the root of the frontend project.
+
+- Webapp can be reach at `http://localhost:4200/`.
 
 ## How it works
 
 - Enter a valid Date from the datepicker
+
 - Enter a valid Time from the timepicker
+
 - Validation button will be shown only if date and time are correctly set up
+
 - After clicking on the button, the result will be displayed with a different color depending on the state of the response

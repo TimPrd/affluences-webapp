@@ -1,0 +1,2 @@
+<input nbInput type="text" placeholder="Choose time" [nbTimepicker]="timepicker" />
+<nb-timepicker #timepicker="nbTimepicker" singleColumn [step]="30" (onSelectTime)="onTimeChange($event)"></nb-timepicker>

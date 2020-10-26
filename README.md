@@ -1,27 +1,25 @@
-# WebAffluence
+# Affluence - Is Ressource Available
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Before running the app
 
-## Code scaffolding
+- Run the backend app on 8080 port
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Using `Docker build --tag affluences .` and `docker run -p 8080:8080 --name affluences-container affluences`
 
-## Build
+- If port is no more 8080, please change the value of apiUrl in file environments/environment.ts (frontend)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Running frontend app
 
-## Running unit tests
+Run `ng serve` or `npm run start` at the root of the frontend project.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Webapp can be reach at `http://localhost:4200/`.
 
-## Running end-to-end tests
+## How it works
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Enter a valid Date from the datepicker
+- Enter a valid Time from the timepicker
+- Validation button will be shown only if date and time are correctly set up
+- After clicking on the button, the result will be displayed with a different color depending on the state of the response
